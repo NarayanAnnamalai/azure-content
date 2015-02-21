@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="virtual-networks-scenario-set-up-DMZ" 
-   description="Demonstrate how to setup a DMZ application in Azure using Virtual Network and Network Security Group" 
+   pageTitle="Setting up a DMZ in Azure Virtual Network" 
+   description="This article demonstrates how to deploy a multi tier service in Azure with DMZ and appropriate network segmentation" 
    services="virtual-network" 
    documentationCenter="" 
    authors="narayanAnnamalai" 

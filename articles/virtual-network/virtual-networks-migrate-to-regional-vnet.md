@@ -17,7 +17,7 @@
 
 # How to migrate from Affinity Groups to a Regional Virtual Network (VNet)
 
-You can use an affinity group to ensure that resources created within the same affinity group are physically hosts by servers that are close together, enabling these resources to communicate quicker. In the past, affinity groups were a requirement for creating virtual networks (VNets). At the time, the network manager service that managed VNets could only work within a set of physical servers or scale unit. Recent architectural improvements have increased the scope of network management to a region.
+You can use an affinity group to ensure that resources created within the same affinity group are physically hosted by servers that are close together, enabling these resources to communicate quicker. In the past, affinity groups were a requirement for creating virtual networks (VNets). At that time, the network manager service that managed VNets could only work within a set of physical servers or scale unit (cluster). Recent architectural improvements have increased the scope of network management to a region.
 
 As a result of these architectural improvements, affinity groups are no longer recommended, or required for virtual networks. The use of affinity groups for VNets is being replaced by regions. VNets that are associated with regions are called regional VNets.
 
@@ -27,7 +27,7 @@ Additionally, we recommend that you don't use affinity groups in general. Aside 
 
 Going forward, when creating new VNets, use *Region*. You'll see this as an option in the Management Portal. Note that in the network configuration file, this shows as *Location*.
 
->[AZURE.IMPORTANT] Although it is still technically possible to create a virtual network that is associated with an affinity group, there is no compelling reason to do so. Many new features, such as Network Security Groups, are only available when using a regional VNet and are not available for virtual networks that are associated with affinity groups.
+>[AZURE.IMPORTANT] Although it is still technically possible to create a virtual network that is associated with an affinity group, there is no reason to do so. Many new features, such as Network Security Groups, User defined routes are only available when using a regional VNet and are not available for virtual networks that are associated with affinity groups.
 
 ### About VNets currently associated with affinity groups
 

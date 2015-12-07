@@ -45,11 +45,11 @@ Notice how the Azure infrastructure takes on the role of the router, allowing ac
 
 - **Connectivity**. VNets can be connected to each other, and even to your on-premises datacenter, by using a site-to-site VPN connection, or ExpressRoute connection. To learn more about VPN gateways, visit [About VPN gateways](./vpn-gateway-about-vpngateways.md). To learn more about ExpressRoute, visit [ExpressRoute technical overview](./expressroute-introduction.md).
 
-    >[AZURE.NOTE] Make sure you create a VNet before deploying any IaaS VMs or PaaS role instances to your Azure environment. ARM based VMs require a VNet, and if you do not specify an existing VNet, Azure creates a default VNet that might have a CIDR address block clash with your on-premises network. Making it impossible for you to connect your VNet to your on-premises network.
+>[AZURE.NOTE] Make sure you create a VNet before deploying any IaaS VMs or PaaS role instances to your Azure environment. ARM based >VMs require a VNet, and if you do not specify an existing VNet, Azure creates a default VNet that might have a CIDR address block >clash with your on-premises network. Making it impossible for you to connect your VNet to your on-premises network.
 
 ## Deployment Modes
 
-    >[AZURE.NOTE] There are two deployment modes in Azure: classic (also known as Service Management) and Azure Resource Manager (ARM). Classic VNets could be added to an affinity group, or created as a regional VNet. If you have a VNet in an affinity group, it is recommended to [migrate it to a regional VNet](./virtual-networks-migrate-to-regional-vnet.md). 
+>[AZURE.NOTE] There are two deployment modes in Azure: classic (also known as Service Management) and Azure Resource Manager (ARM). >Classic VNets could be added to an affinity group, or created as a regional VNet. If you have a VNet in an affinity group, it is >recommended to [migrate it to a regional VNet](./virtual-networks-migrate-to-regional-vnet.md). 
     
 ## Subnets
 
